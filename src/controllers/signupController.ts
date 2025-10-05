@@ -3,7 +3,7 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import dotenv from "dotenv"
 import { User } from "../models/user.ts"  
-dotenv.config()
+dotenv.config() 
 export const signupController = async (req: Request, res: Response) => {
   try {
     const { name, email, password } = req.body
