@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec npx ts-node src/index.ts"
+    "dev": "nodemon --watch src --exec node --loader ts-node/esm ./src/index.ts",
+    "start": "nodemon --exec npx ts-node src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
